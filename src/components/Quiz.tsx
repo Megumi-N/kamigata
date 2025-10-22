@@ -2,7 +2,8 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import type { CardPair, Card as CardType } from '@/types';
-import { TIMING } from '@/constants';
+import { TIMING, CATEGORY_IMAGE_MAP } from '@/constants';
+import { calculateCategoryScores } from '@/lib/scoring';
 import Card from './Card';
 
 interface QuizProps {
@@ -30,6 +31,16 @@ export default function Quiz({ pairs, onComplete }: QuizProps) {
         setCurrentQuestion(currentQuestion + 1);
       }, TIMING.CARD_SELECTION_DELAY);
     } else {
+      // 最後の質問: 結果画像をプリロード
+      const { topCategory } = calculateCategoryScores(newSelectedCards);
+      const resultImagePath = `/images/archetypes/${CATEGORY_IMAGE_MAP[topCategory]}`;
+
+      const link = document.createElement('link');
+      link.rel = 'preload';
+      link.as = 'image';
+      link.href = resultImagePath;
+      document.head.appendChild(link);
+
       // 完了
       setTimeout(() => {
         onComplete(newSelectedCards);
