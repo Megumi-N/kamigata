@@ -9,9 +9,8 @@ interface OnboardingProps {
 
 const slides = [
   {
-    title: '言葉はいらない。',
-    description:
-      'いまの空気を掬う。\n左右どちらか、直感で選ぶ。\n考えない。戻らない。',
+    title: 'いいかも、から掬う。',
+    description: '左右どちらか直感で選び、\nヘアスタイルを提案。',
   },
 ];
 
