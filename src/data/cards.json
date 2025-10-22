@@ -1,0 +1,100 @@
+{
+  "cards": [
+    {
+      "id": "q1a",
+      "questionId": "Q1",
+      "answer": "A",
+      "headline": "朝の柔らかい光に馴染む感じ",
+      "description": "空気の温度感",
+      "imageExt": "jpeg"
+    },
+    {
+      "id": "q1b",
+      "questionId": "Q1",
+      "answer": "B",
+      "headline": "夜の街灯の下で輪郭が立つ感じ",
+      "description": "空気の温度感",
+      "imageExt": "jpeg"
+    },
+    {
+      "id": "q2a",
+      "questionId": "Q2",
+      "answer": "A",
+      "headline": "すっと近づける / 話しかけやすい",
+      "description": "人との距離感",
+      "imageExt": "jpeg"
+    },
+    {
+      "id": "q2b",
+      "questionId": "Q2",
+      "answer": "B",
+      "headline": "少し観察してから関わりたくなる距離感",
+      "description": "人との距離感",
+      "imageExt": "jpeg"
+    },
+    {
+      "id": "q3a",
+      "questionId": "Q3",
+      "answer": "A",
+      "headline": "整っているけど、自然体でゆるさがある",
+      "description": "秩序 vs 揺らぎ",
+      "imageExt": "jpg"
+    },
+    {
+      "id": "q3b",
+      "questionId": "Q3",
+      "answer": "B",
+      "headline": "構成が明確で、緊張感・芯の強さがある",
+      "description": "秩序 vs 揺らぎ",
+      "imageExt": "jpg"
+    },
+    {
+      "id": "q4a",
+      "questionId": "Q4",
+      "answer": "A",
+      "headline": "淡くて、空気に溶けるような色や質感",
+      "description": "色と湿度の感覚",
+      "imageExt": "jpeg"
+    },
+    {
+      "id": "q4b",
+      "questionId": "Q4",
+      "answer": "B",
+      "headline": "濃淡や光影がくっきりして印象に残る",
+      "description": "色と湿度の感覚",
+      "imageExt": "jpeg"
+    },
+    {
+      "id": "q5a",
+      "questionId": "Q5",
+      "answer": "A",
+      "headline": "余白が多く、静かでミニマル",
+      "description": "情報密度",
+      "imageExt": "jpeg"
+    },
+    {
+      "id": "q5b",
+      "questionId": "Q5",
+      "answer": "B",
+      "headline": "細部に温度やニュアンスが滲んでいる",
+      "description": "情報密度",
+      "imageExt": "jpeg"
+    },
+    {
+      "id": "q6a",
+      "questionId": "Q6",
+      "answer": "A",
+      "headline": "自然と馴染む / 調和する存在",
+      "description": "存在感の出し方",
+      "imageExt": "jpeg"
+    },
+    {
+      "id": "q6b",
+      "questionId": "Q6",
+      "answer": "B",
+      "headline": "少し\"選んでいる感\"や美意識の意思表示がある",
+      "description": "存在感の出し方",
+      "imageExt": "jpeg"
+    }
+  ]
+}
