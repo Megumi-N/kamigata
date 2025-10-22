@@ -29,6 +29,8 @@ export default function Card({ card, onClick }: CardProps) {
           fill
           className="object-cover"
           sizes="(max-width: 768px) 50vw, 50vw"
+          priority
+          loading="eager"
         />
         {/* グラデーションオーバーレイ */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />

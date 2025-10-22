@@ -37,6 +37,26 @@ export default function Quiz({ pairs, onComplete }: QuizProps) {
     }
   }, [currentQuestion, pairs.length, selectedCards, onComplete]);
 
+  // 次の質問の画像をプリロード
+  useEffect(() => {
+    if (currentQuestion < pairs.length - 1) {
+      const nextPair = pairs[currentQuestion + 1];
+      const nextImages = [
+        `/images/cards/${nextPair.cardA.id}.${nextPair.cardA.imageExt}`,
+        `/images/cards/${nextPair.cardB.id}.${nextPair.cardB.imageExt}`,
+      ];
+
+      // プリロードを実行
+      nextImages.forEach((src) => {
+        const link = document.createElement('link');
+        link.rel = 'preload';
+        link.as = 'image';
+        link.href = src;
+        document.head.appendChild(link);
+      });
+    }
+  }, [currentQuestion, pairs]);
+
   // キーボードナビゲーション
   useEffect(() => {
     const handleKeyPress = (e: KeyboardEvent) => {
