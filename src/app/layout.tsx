@@ -2,8 +2,10 @@ import type { Metadata, Viewport } from 'next';
 import Script from 'next/script';
 import './globals.css';
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://statuesque-cactus-4998a1.netlify.app';
+
 export const metadata: Metadata = {
-  metadataBase: new URL('https://kamigata.netlify.app'),
+  metadataBase: new URL(siteUrl),
   title: 'KAMIGATA - メンズ髪型診断',
   description: '2択で直感的に髪型の傾向を診断。あなたに似合う髪型のスタイルを見つけよう。',
   keywords: ['髪型診断', 'メンズヘアスタイル', 'ヘアスタイル診断', '髪型', 'メンズ', '診断'],
@@ -11,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'ja_JP',
-    url: 'https://kamigata.netlify.app',
+    url: siteUrl,
     siteName: 'KAMIGATA',
     title: 'KAMIGATA - メンズ髪型診断',
     description: '2択で直感的に髪型の傾向を診断。あなたに似合う髪型のスタイルを見つけよう。',
